@@ -1,0 +1,23 @@
+{
+  "name": "BookStoreAppAutomationWithElements-Cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RashidulHasanRatul/BookStoreAppAutomationWithElements-Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RashidulHasanRatul/BookStoreAppAutomationWithElements-Cypress/issues"
+  },
+  "homepage": "https://github.com/RashidulHasanRatul/BookStoreAppAutomationWithElements-Cypress#readme",
+  "dependencies": {
+    "cypress": "^10.4.0"
+  }
+}
