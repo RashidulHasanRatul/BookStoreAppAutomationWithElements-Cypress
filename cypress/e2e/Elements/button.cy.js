@@ -17,7 +17,6 @@ describe(" Button", () => {
       "have.text",
       "You have done a right click"
     );
-  
 
     // click dynamic button
     // cy.get('button[type="button"]').then((btnTxt) => {
@@ -34,16 +33,15 @@ describe(" Button", () => {
     //   }
     // });
 
-     cy.get('button[type="button"]').each(($el, index, $list) => {
-        cy.log($el.text());
-        if($el.text() === "Click Me"){
-          cy.get($el).click();
-          cy.get("#dynamicClickMessage").should(
-            "have.text",
-            "You have done a dynamic click"
-          );
-        }
-     })
-  
+    cy.get('button[type="button"]').each(($el, index, $list) => {
+      cy.log($el.text());
+      if ($el.text() === "Click Me") {
+        cy.get($el).click();
+        cy.get("#dynamicClickMessage").should(
+          "have.text",
+          "You have done a dynamic click"
+        );
+      }
+    });
   });
 });
