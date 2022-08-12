@@ -2,9 +2,7 @@ describe(" Button", () => {
   before(() => {
     cy.visit("/buttons");
   });
-
   it("check the  Button and assert that ", () => {
-    // double click on the button
     cy.get("#doubleClickBtn").dblclick();
     cy.get("#doubleClickMessage").should(
       "have.text",
@@ -42,6 +40,15 @@ describe(" Button", () => {
           "You have done a dynamic click"
         );
       }
+    });
+
+    // multiple assertion on the text
+    cy.get("#doubleClickMessage").each(($el, index, $list) => {
+      expect($el.text()).to.be.oneOf([
+        "You have done a double click",
+        "You have done a right click",
+        "You have done a dynamic click",
+      ]);
     });
   });
 });
